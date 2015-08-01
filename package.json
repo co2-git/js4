@@ -1,0 +1,19 @@
+{
+  "name": "js4",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "bin": {
+    "js4" : "node dist/render"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "transpile": "babel app/ --modules common --stage 1 --out-dir dist;",
+    "hot-transpile": "babel app/ --watch --modules common --stage 1 --out-dir dist;"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "babel": "^5.8.20"
+  }
+}
